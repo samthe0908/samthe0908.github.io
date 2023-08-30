@@ -1,0 +1,22 @@
+img{
+    width: 500px;
+    height: 200px;
+}
+
+p{
+    background-color: coral;
+    color:blue;
+    
+}
+
+a{
+    color: brown;
+}
+h1{
+ 
+    background-color: rgb(55, 54, 56);
+    color: darkkhaki;
+}
+body{
+    background-color: burlywood;
+}
