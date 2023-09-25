@@ -12,26 +12,25 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 <body>
-    <header>
-        <div class="top">
-            <div class="logo">
+    <div class="container">
+        <header>
+            <div class="top">
+                <div class="logo">
                 <img src="img/foodCourtLogan.JPG" alt="logo">
-            </div>
-            <div class="search-container">
-                <form action="/action_page.php">
+                </div>
+                <div class="search-container">
+                    <form action="/action_page.php">
                     <input type="text" placeholder="Sök.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>            
-            <div class="socialMedia">
+                    </form>
+                </div>            
+                <div class="socialMedia">
                 <a href="https://www.facebook.com/samantha.theerawat" class="fa-brands fa-facebook"></a>
                 <a href="https://www.instagram.com/nokiang_thee/" class="fa-brands fa-instagram"></a>
                 <a href="https://twitter.com/SamanthaTh11" class="fa-brands fa-twitter"></a>
-            </div>    
-        </div>
-    
-         <nav>
-            <div class="container">
+                </div>    
+            </div>
+            <nav>
                 <div class="nav-wrapper">
                     <ul class="menu">
                         <li><a href="index.php" class="active">Hem</a></li>
@@ -44,51 +43,60 @@
                         </li>
                         <li><a href="#">Om mig</a></li>
                         <li><a href="#">Kontakt</a></li>
-                
-            </ul> 
+                    </ul> 
+                    <div class="ham-menu" onclick="toggleHam(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="mobile-search-container">
+                        <form action="/action_page.php">
+                        <input type="text" placeholder="Sök.." name="search">
+                        </form>
+                    </div>
                 </div>
+        
+               <!-- <button class="burger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>-->
+                
+            </nav>
+        </header>
+        <main >
+            <div class="last-post">
+                <a href="#"> <img src="img/Pad-Krapow.webp" alt="Pad-Krapow"></a> 
             </div>
-            
-            <button class="burger-btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <div class="post-content">
+                <h1>Senaste inlägg</h1>
+                <p>
+                <a href="#">Pad Krapow</a>, otherwise known as Pad Kra Pao, is a beloved stir-fry dish in Thailand that is just as delicious as it iseasy to make.<br>
+                The dish is made up of just a handful of ingredients, but the true star of the dish is the holy basil. This dish is
+                aptly named, translating to “basil stir-fry,” as the holy basil gives it its characteristic peppery taste and delightful
+                aroma. While the other components of Pad Krapow are flexible; the basil is essential. If you can’t find holy basil, use
+                Italian basil; it is much closer in flavor than Thai basil for this specific dish.
+                </p> 
+            </div>
         
-        </nav>
-    </header>
-    <main>
-        <div class="last-post">
-          <a href="#"> <img src="img/Pad-Krapow.webp" alt="Pad-Krapow"></a> 
-        </div>
-        <div class="post-content">
-            <h1>Senaste inlägg</h1>
-            <p><a href="#">Pad Krapow</a>, otherwise known as Pad Kra Pao, is a beloved stir-fry dish in Thailand that is just as delicious as it is
-            easy to make.<br>
-            The dish is made up of just a handful of ingredients, but the true star of the dish is the holy basil. This dish is
-            aptly named, translating to “basil stir-fry,” as the holy basil gives it its characteristic peppery taste and delightful
-            aroma. While the other components of Pad Krapow are flexible; the basil is essential. If you can’t find holy basil, use
-            Italian basil; it is much closer in flavor than Thai basil for this specific dish.
-            </p>
-        </div>      
-        
-    </main>
-    
-    <footer>
-        <div class="foot-socialMedia">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-        </div>
-    <p>
-    <a href="mailto:#">mail@foodcourt.se</a>
-    <br>
-        © Copyright 2023 – Samantha Theerawat – All rights reserved
-    <br>
-        <i class="fa-solid fa-heart" style="color: #ec0909;"></i>
-        Byggd med passion för mat <i class="fa-solid fa-bowl-food" style="color: #0892e7;"></i>
-        & <i class="fa-solid fa-plane-departure" style="color: #0892e7;"></i>  
-         resor<i class="fa-solid fa-heart" style="color: #ec0909;"></i>
-    </p>   
+        </main>
+        <footer>
+            <div class="foot-socialMedia">
+                <a href="https://www.facebook.com/samantha.theerawat" class="fa-brands fa-facebook"></a>
+                <a href="https://www.instagram.com/nokiang_thee/" class="fa-brands fa-instagram"></a>
+                <a href="https://twitter.com/SamanthaTh11" class="fa-brands fa-twitter"></a>
+            </div>
+            <p>
+            <a href="mailto:#">mail@foodcourt.se</a>
+            <br>
+            © Copyright 2023 – Samantha Theerawat – All rights reserved
+            <br>
+            <i class="fa-solid fa-heart" style="color: #ec0909;"></i>
+             Byggd med passion för mat <i class="fa-solid fa-bowl-food" style="color: #0892e7;"></i>
+            & <i class="fa-solid fa-plane-departure" style="color: #0892e7;"></i>  
+            resor<i class="fa-solid fa-heart" style="color: #ec0909;"></i>
+            </p>   
     </footer>
+    </div>
+    
     <script  src="script.js"></script>
 </body>
 </html>
