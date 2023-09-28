@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>blogg</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/blogg.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="top">
+                    <div class="logo">
+                        <img src="img/foodCourtLogan.JPG" alt="logo">
+                    </div>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Sök.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="socialMedia">
+                        <a href="https://www.facebook.com/samantha.theerawat" class="fa-brands fa-facebook"></a>
+                        <a href="https://www.instagram.com/nokiang_thee/" class="fa-brands fa-instagram"></a>
+                        <a href="https://twitter.com/SamanthaTh11" class="fa-brands fa-twitter"></a>
+                    </div>
+                </div>
+                <nav>
+                    <div class="nav-wrapper">
+                        <ul class="menu" id="myMenu">
+                            <li><a href="index.html" class="active">Hem</a></li>
+                            <li><a href="blogg.html">Blogg</a></li>
+                            <li><a href="#">Om mig</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                        <div class="ham-menu" onclick="toggleHam(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <div class="mobile-search-container">
+                            <form action="/action_page.php">
+                                <input type="text" placeholder="Sök.." name="search">
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="bloggPost-wrapper">
+                    <div class="blogg-post"><a href="padKrapao.html">
+                        <h3> Pad Krapow </h3>
+                        <div class="post-image">
+                            <img src="img/Pad-Krapow.webp" alt="paddkrapao">
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="blogg-post"><a href="padKrapao.html">
+                            <h3> Pad Thai </h3>
+                            <div class="post-image">
+                                <img src="img/paddthai.jpg" alt="paddkrapao">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blogg-post"><a href="padKrapao.html">
+                            <h3> panaeng </h3> 
+                            <div class="post-image">
+                                <img src="img/panaeng.webp" alt="paddkrapao">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </main>
+            <footer>
+                <div class="foot-socialMedia">
+                    <a href="https://www.facebook.com/samantha.theerawat" class="fa-brands fa-facebook"></a>
+                    <a href="https://www.instagram.com/nokiang_thee/" class="fa-brands fa-instagram"></a>
+                    <a href="https://twitter.com/SamanthaTh11" class="fa-brands fa-twitter"></a>
+                </div>
+                <p>
+                    <a href="mailto:#">mail@foodcourt.se</a>
+                    <br>
+                    © Copyright 2023 – Samantha Theerawat – All rights reserved
+                    <br>
+                    <i class="fa-solid fa-heart" style="color: #ec0909;"></i>
+                    Byggd med passion för mat <i class="fa-solid fa-bowl-food" style="color: #0892e7;"></i>
+                    & <i class="fa-solid fa-plane-departure" style="color: #0892e7;"></i>
+                    resor<i class="fa-solid fa-heart" style="color: #ec0909;"></i>
+                </p>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

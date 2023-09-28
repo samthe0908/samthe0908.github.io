@@ -1,0 +1,65 @@
+.bloggPost-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+
+}
+.blogg-post{
+    display: flex;
+    flex-direction: column;
+    
+}
+.blogg-post h3{
+ text-align: center;
+}
+.blogg-post a{
+    text-decoration: none;
+}
+.post-image{
+    width: 350px;
+    height: 200px;
+    }
+
+.post-image img{
+    height: 100%;
+}
+
+.receipt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid #804d86;;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 10px    ;
+    
+}
+.ingredients{
+    flex: 30%;
+    padding: 30px;
+    }
+ .todo{
+    flex: 70%;
+    padding: 30px;
+ }
+ .comments{
+margin: 20px;
+ }
+
+ 
+
+ /* Responsive layout-mobile */
+ @media only screen and (max-width: 450px) {
+    .postHero-wrapper {
+            
+            flex-direction: column;
+    
+        }
+                .receipt {
+                    
+                    flex-direction: column;
+                    
+                }
+
+ }
