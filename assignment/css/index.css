@@ -14,6 +14,9 @@ body{
  .container{
     max-width: 1140px;
     margin: 0 auto;
+    min-height: 100vh;
+  
+
    
  }
      
@@ -64,7 +67,7 @@ header{
 .socialMedia{
     display: flex;
     justify-content: space-between;
-    color: #804d86;
+    color: #804d86 !important;
     text-align: center;
     font-size: 30px;
     letter-spacing: 20px;
@@ -73,6 +76,7 @@ header{
 
 .socialMedia a{
     text-decoration: none;
+    
 }
 nav{
     background-color: #fab994cb;
@@ -143,7 +147,9 @@ footer{
 display: flex;
 flex-direction: column;
 background-color: #fab994cb;
-text-align: center;   
+text-align: center;  
+width: 100%;
+
 
 }
 
