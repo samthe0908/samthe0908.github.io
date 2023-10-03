@@ -1,0 +1,112 @@
+.bloggPost-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.postGroupName {
+    border: 3px solid #804d86;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px 80px;
+    color: #454545;
+}
+
+.bloggPostMenu {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.bloggPostTrips {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blogg-post {
+    display: flex;
+    width: 350px;
+
+
+}
+
+.blogg-post a {
+    text-decoration: none;
+
+}
+
+.bloggPost-image {
+
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.bloggPost-image img {
+    width: 100%;
+
+
+}
+
+.bloggPost-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bloggPost-content h3,
+p {
+    text-align: center;
+    color: #454545;
+
+}
+
+.receipt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid #804d86;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 10px;
+
+}
+
+.ingredients {
+    flex: 30%;
+    padding: 30px;
+}
+
+.todo {
+    flex: 70%;
+    padding: 30px;
+}
+
+.comments {
+    margin: 20px;
+}
+
+
+
+/* Responsive layout-mobile */
+@media only screen and (max-width: 450px) {
+    .postHero-wrapper {
+        flex-direction: column;
+    }
+
+    .blogg-post {
+        display: flex;
+
+    }
+
+    .receipt {
+        flex-direction: column;
+
+    }
+
+}
