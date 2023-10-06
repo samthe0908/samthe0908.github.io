@@ -80,13 +80,7 @@ header{
 }
 nav{
     background-color: #fab994cb;
-   /* display: flex;
-    flex-direction: row;
-    background-color: #fab994cb;
-    font-size: 20px;
-    overflow: hidden;
-    height: 5vh;
-    justify-content: center;*/
+   
 }
 .nav-wrapper{
     display: flex;
@@ -149,6 +143,8 @@ flex-direction: column;
 background-color: #fab994cb;
 text-align: center;  
 width: 100%;
+bottom: 0px;
+
 
 
 }
@@ -156,9 +152,7 @@ width: 100%;
 .foot-socialMedia{
    display: none;
     justify-content: center;
-    /*color: #804d86;*/
     color: red;
-
     text-align: end;
     font-size: 20px;
     letter-spacing: 20px;
@@ -166,7 +160,7 @@ width: 100%;
 }
 .foot-socialMedia a{
     text-decoration: none;
-    
+
 }
 
 footer p{
@@ -264,4 +258,8 @@ footer p{
     .foot-socialMedia{
         display: flex;
     }
+    .menumenu-active{
+        list-style: none;
+    }
+    
 }
