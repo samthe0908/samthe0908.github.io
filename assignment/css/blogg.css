@@ -10,23 +10,19 @@
     color: #454545;
 }
 
-.bloggPostMenu{
+.bloggPostMenu, .bloggPostTrips{
     display: flex;
     flex-direction: row;
     padding: 10px; 
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
    
 }
 
-.bloggPostTrips {
-    display: flex;
-    flex-direction: column;
-  
-}
 .blogg-post{
     display: flex;
     width: 350px;
+    margin:0 10px ;
     
  
 
@@ -48,8 +44,6 @@
 .bloggPost-image img{
     width: 100%;
 
-    
-    
 }
 
 .bloggPost-content{
@@ -59,6 +53,8 @@
 }
 .bloggPost-content h3, p{
  text-align: center;
+ color: #804d86;
+ padding: 0 30px;
    
 }
 
