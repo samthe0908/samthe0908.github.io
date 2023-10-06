@@ -1,130 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pad-Krapow</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/blogg.css">
-    <link rel="stylesheet" href="css/bloggPostContents.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="top">
-                <div class="logo">
-                    <img src="img/foodCourtLogan.JPG" alt="logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pad-Krapow</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/bloggPostContents.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="top">
+                    <div class="logo">
+                        <img src="img/foodCourtLogan.JPG" alt="logo">
+                    </div>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Sök.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="socialMedia">
+                        <a href="https://www.facebook.com/samantha.theerawat" class="fa-brands fa-facebook"></a>
+                        <a href="https://www.instagram.com/nokiang_thee/" class="fa-brands fa-instagram"></a>
+                        <a href="https://twitter.com/SamanthaTh11" class="fa-brands fa-twitter"></a>
+                    </div>
                 </div>
-                <div class="search-container">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Sök.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
+                <nav>
+                    <div class="nav-wrapper">
+                        <ul class="menu" id="myMenu">
+                            <li><a href="index.html" class="active">Hem</a></li>
+                            <li><a href="blogg.html">Blogg</a></li>
+                            <li><a href="#">Om mig</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                        <div class="ham-menu" onclick="toggleHam(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <div class="mobile-search-container">
+                            <form action="/action_page.php">
+                                <input type="text" placeholder="Sök.." name="search">
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="postPage">
+                    <div class="postWrapper">
+                        <div class="postImageAndContents">
+                            <div class="postImage">
+                                <img src=" img/Pad-Krapow.webp" alt="paddkrapao">
+                            </div>
+                            <div class="postContent">
+                                <h1>Pad Pad-Krapow</h1>
+                                <p>
+                                    Pad Krapow, otherwise known as Pad Kra Pao, is a beloved stir-fry dish in
+                                    Thailand
+                                    that
+                                    is just as
+                                    delicious as it iseasy to make.<br>
+                                    The dish is made up of just a handful of ingredients, but the true star of the
+                                    dish
+                                    is
+                                    the holy basil.
+                                    This dish is
+                                    aptly named, translating to “basil stir-fry,” as the holy basil gives it its
+                                    characteristic peppery
+                                    taste and
+                                    delightful
+                                    aroma. While the other components of Pad Krapow are flexible; the basil is
+                                    essential. If
+                                    you can’t find
+                                    holy basil,
+                                    use
+                                    Italian basil; it is much closer in flavor than Thai basil for this specific
+                                    dish.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="receipt">
+                            <div class="ingredients">
+                                <h3>Ingredients</h3>
+                                <li>aa</li>
+                                <li>bb</li>
+                                <li>cc</li>
+                            </div>
+                            <div class="todo">
+                                <h3> gör så här</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nostrum. Autem
+                                    incidunt
+                                    ab repellendus nostrum
+                                    iusto? Dolorum at vel doloribus praesentium nam id laborum, maxime illum, fuga,
+                                    dolorem
+                                    ullam ex!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments">
+                        <form action="/action_page.php">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="fname">Namn</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" name="name" placeholder="Ditt namn..">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="subject">Kommentar</label>
+                                </div>
+                                <div class="col-75">
+                                    <textarea name="comments" placeholder="Kommenterar här.."
+                                        style="height:200px"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Skicka">
+                            </div>
+                        </form>
+
+
+
+
+                    </div>
                 </div>
-                <div class="socialMedia">
+            </main>
+            <footer>
+                <div class="foot-socialMedia">
                     <a href="https://www.facebook.com/samantha.theerawat" class="fa-brands fa-facebook"></a>
                     <a href="https://www.instagram.com/nokiang_thee/" class="fa-brands fa-instagram"></a>
                     <a href="https://twitter.com/SamanthaTh11" class="fa-brands fa-twitter"></a>
                 </div>
-            </div>
-            <nav>
-                <div class="nav-wrapper">
-                    <ul class="menu" id="myMenu">
-                        <li><a href="index.html" class="active">Hem</a></li>
-                        <li><a href="blogg.html">Blogg</a></li>
-                        <li><a href="#">Om mig</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-                    <div class="ham-menu" onclick="toggleHam(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                    <div class="mobile-search-container">
-                        <form action="/action_page.php">
-                            <input type="text" placeholder="Sök.." name="search">
-                        </form>
-                    </div>
-                </div>  
-            </nav>
-        </header>
-        <main>
-            <div class="blogg-post">
-                <div class="post-wrapper">
-                    <div class="menuPost-image">
-                        <img src="img/Pad-Krapow.webp" alt="paddkrapao">
-                    </div>
-                    <div class="post-content">
-                        <h1>Pad Pad-Krapow</h1>
-                        <p>
-                            Pad Krapow, otherwise known as Pad Kra Pao, is a beloved stir-fry dish in Thailand that
-                            is just as
-                            delicious as it iseasy to make.<br>
-                            The dish is made up of just a handful of ingredients, but the true star of the dish is the holy basil.
-                            This dish is
-                            aptly named, translating to “basil stir-fry,” as the holy basil gives it its characteristic peppery
-                            taste and
-                            delightful
-                            aroma. While the other components of Pad Krapow are flexible; the basil is essential. If you can’t find
-                            holy basil,
-                            use
-                            Italian basil; it is much closer in flavor than Thai basil for this specific dish.
-                        </p>
-                    </div>
+                <p>
+                    <a href="mailto:#">mail@foodcourt.se</a>
+                    <br>
+                    © Copyright 2023 – Samantha Theerawat – All rights reserved
+                    <br>
+                    <i class="fa-solid fa-heart" style="color: #ec0909;"></i>
+                    Byggd med passion för mat <i class="fa-solid fa-bowl-food" style="color: #0892e7;"></i>
+                    & <i class="fa-solid fa-plane-departure" style="color: #0892e7;"></i>
+                    resor<i class="fa-solid fa-heart" style="color: #ec0909;"></i>
+                </p>
+            </footer>
+        </div>
 
-                </div>
-                <div class="receipt">
-                    <div class="ingredients">
-                        <h3>Ingredients</h3>
-                        <li>aa</li>
-                        <li>bb</li>
-                        <li>cc</li>
-                    </div>
-        <div class="todo">
-            <h3> gör så här</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nostrum. Autem incidunt ab repellendus nostrum
-                iusto? Dolorum at vel doloribus praesentium nam id laborum, maxime illum, fuga, dolorem ullam ex!
-            </p>
-        </div>
-        </div>
-        <div class="comments">
-            <form action="/action_page.php" id="usrform">
-                <label for="name">Namn:</label> <br>
-                <input type="text" name="usrname"><br><br>
-                <label for="comments">Kommenterar här</label><br>
-                <textarea rows="4" cols="50" name="comment" form="usrform"></textarea> <br>
-                <input type="submit" value="skickar">
-            </form>
-        </div>
-        </div>
-    
-    
-        </main>
-        <footer>
-            <div class="foot-socialMedia">
-                <a href="https://www.facebook.com/samantha.theerawat" class="fa-brands fa-facebook"></a>
-                <a href="https://www.instagram.com/nokiang_thee/" class="fa-brands fa-instagram"></a>
-                <a href="https://twitter.com/SamanthaTh11" class="fa-brands fa-twitter"></a>
-            </div>
-            <p>
-                <a href="mailto:#">mail@foodcourt.se</a>
-                <br>
-                © Copyright 2023 – Samantha Theerawat – All rights reserved
-                <br>
-                <i class="fa-solid fa-heart" style="color: #ec0909;"></i>
-                Byggd med passion för mat <i class="fa-solid fa-bowl-food" style="color: #0892e7;"></i>
-                & <i class="fa-solid fa-plane-departure" style="color: #0892e7;"></i>
-                resor<i class="fa-solid fa-heart" style="color: #ec0909;"></i>
-            </p>
-        </footer>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
+
 </html>
