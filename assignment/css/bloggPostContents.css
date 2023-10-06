@@ -1,112 +1,136 @@
-.bloggPost-wrapper {
+
+
+.postPage {
     display: flex;
     flex-direction: column;
+    
 }
-
-.postGroupName {
-    border: 3px solid #804d86;
-    border-radius: 50px;
-    text-align: center;
-    margin: 10px 80px;
-    color: #454545;
-}
-
-.bloggPostMenu {
+.postWrapper{
     display: flex;
-    flex-direction: row;
-    padding: 10px;
     flex-wrap: wrap;
-    justify-content: space-between;
-
+   
 }
-
-.bloggPostTrips {
-    display: flex;
-    flex-direction: column;
-
+.postImageAndContents{
+    flex: 65%;
 }
-
-.blogg-post {
-    display: flex;
-    width: 350px;
-
-
+.postImage{
+    padding: 20px;
 }
-
-.blogg-post a {
-    text-decoration: none;
-
-}
-
-.bloggPost-image {
-
-    width: 250px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-}
-
-.bloggPost-image img {
+.postImage img {
     width: 100%;
-
-
 }
-
-.bloggPost-content {
+.postContent{
     display: flex;
     flex-direction: column;
-
+    padding: 10px 40px;
 }
-
-.bloggPost-content h3,
-p {
+.postContent h1, p {
     text-align: center;
     color: #454545;
 
 }
-
 .receipt {
-    display: flex;
+    display: flex; 
+    flex: 35%;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
     border: 2px solid #804d86;
-    padding: 20px;
     border-radius: 50px;
-    margin: 10px;
-
+    margin-top: 20px;
 }
 
 .ingredients {
-    flex: 30%;
     padding: 30px;
+    color: #454545;
 }
 
+
 .todo {
-    flex: 70%;
     padding: 30px;
+    color: #454545;
+   
+}
+.todo p{
+    text-align: left;
 }
 
 .comments {
-    margin: 20px;
+    border-radius: 5px;
+    margin: 100px;
+}
+ .col-75 input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #804d86;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+   
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: larger;
+}
+
+input[type=submit] {
+    background-color: #804d86;
+    color: #da8b70;
+    font-size: 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin: 10px ;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
 
 /* Responsive layout-mobile */
 @media only screen and (max-width: 450px) {
-    .postHero-wrapper {
-        flex-direction: column;
-    }
-
-    .blogg-post {
-        display: flex;
-
-    }
+   
+   .postImageAndContents, .receipt{
+    flex: 100%;
+   }
 
     .receipt {
         flex-direction: column;
 
     }
+    .comments{
+        margin: 10px;
+    }
+    .col-25,
+    .col-75,
+    input[type=submit] {
+            width: 100%;
+            font-size: 1rem;
+            margin-top: 20px;
+            
+
+        }
 
 }
